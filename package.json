@@ -1,0 +1,23 @@
+{
+  "name": "webpack-exclude-unused-files-plugin",
+  "version": "1.0.0",
+  "description": "在构建过程中使用，筛选出指定目录下的所有未被webpack处理的文件，主要用于优化仓库文件，清除无用文件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anotherso1a/webpack-exclude-unused-files-plugin.git"
+  },
+  "author": "AnotherSola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anotherso1a/webpack-exclude-unused-files-plugin/issues"
+  },
+  "homepage": "https://github.com/anotherso1a/webpack-exclude-unused-files-plugin#readme",
+  "dependencies": {
+    "micromatch": "^4.0.2",
+    "rimraf": "^3.0.2"
+  }
+}
