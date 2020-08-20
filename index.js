@@ -79,10 +79,7 @@ class ExcludeUnusedFilesPlugin {
       if(this.options.needRM){
         fileNames.forEach(p => rm(p))
       }else{
-        console.log(
-          "------------unused files----------",
-          JSON.stringify([...fileNames], null, 2)
-        );
+        fs.writeFileSync(path.resolve('.','unused-files-report.json'),JSON.stringify([...fileNames], null, 2))
       }
     });
   }
